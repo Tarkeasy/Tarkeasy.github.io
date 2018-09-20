@@ -1,0 +1,38 @@
+@import "_mixins/font-face";
+@include font-face("BIGJOHN", "../fonts/BigJohnRegular/BigJohnRegular");
+@include font-face("OpenSansRegular", "../fonts/OpenSansRegular/OpenSansRegular");
+@include font-face("OpenSansBold", "../fonts/OpenSansBold/OpenSansBold",700);
+@include font-face("RobotoLight", "../fonts/RobotoLight/RobotoLight",200);
+@include font-face("SourceSansProLight", "../fonts/SourceSansProLight/SourceSansProLight",200);
+@include font-face("SourceSansProLightItalic","../fonts/SourceSansProLightItalic/SourceSansProLightIt",200, italic);
+@include font-face("SourceSansProBlack", "../fonts/SourceSansProBlack/SourceSansProBlack",800);
+@mixin SourceSansProLight {
+	font: {
+		family: SourceSansProLight, sans-serif;
+		size: 20px;
+		weight:200;
+	}
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: $black;
+}
+@mixin SourceSansProLightItalic {
+	font: {
+		family: SourceSansProLightItalic, sans-serif;
+		size: 14px;
+	}
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+@mixin OpenSansBold {
+	font: {
+		family: OpenSansBold, sans-serif;
+		weight: bold;
+	}
+}
+@mixin SourceSansProBlack {
+	font: {
+		family: SourceSansProBlack, sans-serif;
+		size: 42px;
+	}
+}
